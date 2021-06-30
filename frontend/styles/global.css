@@ -1,0 +1,87 @@
+.fontSmallest {
+	font-size: 12px !important;
+}
+
+.fontSmall {
+	font-size: 14px !important;
+}
+
+.fontMedium {
+	font-size: 16px !important;
+}
+
+.fontLarge {
+	font-size: 18px !important;
+}
+
+.fontBold {
+	font-weight: 500 !important;
+}
+
+.layout {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.welcomemessage {
+	opacity: 0;
+	transform: translateY(3rem);
+	animation: fadeInUp 2s ease forwards;
+}
+
+.mailDetailBtn,
+.mailDetailBtn > * {
+	display: none;
+	color: #000;
+}
+
+#mobileMenu {
+	display: none;
+}
+
+#mailDetailContainer {
+	display: block;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+	.outlookNavContainer {
+		display: none;
+	}
+
+	.emptyState {
+		display: none;
+	}
+
+	.hoverMailDetailBtn {
+		display: none;
+	}
+
+	.mailDetailBtn,
+	.mailDetailBtn > * {
+		display: block;
+		color: #000;
+		margin-top: 8px;
+	}
+
+	#mobileMenu {
+		display: block;
+	}
+
+	#mailDetailContainer {
+		display: none;
+	}
+
+	#mailDetailPage {
+		padding: 8px;
+	}
+}
